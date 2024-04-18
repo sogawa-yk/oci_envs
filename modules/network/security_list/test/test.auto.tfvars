@@ -2,7 +2,7 @@ security_lists = {
   "security_list1" : {
     ingress_rules: [
       {
-        protocol: "TCP",
+        protocol: "6",
         source: "10.0.0.0/16",
         description: "Allow TCP traffic from 10.0.0.0/16",
         source_type: "CIDR_BLOCK",
@@ -38,7 +38,7 @@ security_lists = {
   "security_list2" : {
     ingress_rules: [
       {
-        protocol: "UDP",
+        protocol: "17",
         source: "192.168.1.0/24",
         description: "Allow UDP traffic from 192.168.1.0/24",
         source_type: "CIDR_BLOCK",
@@ -60,7 +60,7 @@ security_lists = {
     egress_rules: [
       {
         destination: "172.16.0.0/16",
-        protocol: "ICMP",
+        protocol: "1",
         description: "Allow ICMP traffic to 172.16.0.0/16",
         destination_type: "CIDR_BLOCK",
         stateless: true,
