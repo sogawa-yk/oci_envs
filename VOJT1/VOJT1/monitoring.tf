@@ -1,0 +1,25 @@
+module "test_monitoring" {
+  source                                              = "../modules/monitoring/live"
+  compartment_id                                      = var.compartment_ocid
+  alarm_display_name                                  = var.alarm_display_name
+  alarm_is_enabled                                    = var.alarm_is_enabled
+  alarm_metric_compartment_id                         = var.compartment_ocid
+  alarm_namespace                                     = var.alarm_namespace
+  alarm_query                                         = var.alarm_query
+  alarm_severity                                      = var.alarm_severity
+  alarm_body                                          = var.alarm_body
+  alarm_is_notifications_per_metric_dimension_enabled = var.alarm_is_notifications_per_metric_dimension_enabled
+  alarm_message_format                                = var.alarm_message_format
+  alarm_metric_compartment_id_in_subtree              = var.alarm_metric_compartment_id_in_subtree
+  alarm_pending_duration                              = var.alarm_pending_duration
+  alarm_repeat_notification_duration                  = var.alarm_repeat_notification_duration
+  alarm_resolution                                    = var.alarm_resolution
+  alarm_resource_group                                = var.alarm_resource_group
+  alarm_suppression_time_suppress_from                = var.alarm_suppression_time_suppress_from
+  alarm_suppression_time_suppress_until               = var.alarm_suppression_time_suppress_until
+  alarm_suppression_description                       = var.alarm_suppression_description
+  notification_topic_name                             = var.notification_topic_name
+  notification_topic_description                      = var.notification_topic_description
+  subscription_endpoint                               = var.subscription_endpoint
+  subscription_protocol                               = var.subscription_protocol
+}
