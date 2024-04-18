@@ -113,6 +113,6 @@ module "test_module" {
 
   for_each        = local.test_data
   compartment_id  = var.compartment_id
-  vcn_id          = var.vcn_id
+  vcn_id          = "ocid1.vcn.oc1.ca-toronto-1.amaaaaaassl65iqa4bwogdr3jswhepteejebls3kyizyr4jkt4tzf25dafrq"
   security_lists  = local.test_data
 }
